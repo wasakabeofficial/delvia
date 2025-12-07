@@ -1,0 +1,32 @@
+.paragraph {
+  font-family: var(--font-body);
+  color: var(--color-black);
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  letter-spacing: 0.2px;
+  max-width: 850px;
+}
+
+.paragraph.light {
+  color: var(--color-white);
+}
+
+.paragraph.center {
+  text-align: center;
+}
+
+.paragraph.small {
+  font-size: 0.9rem;
+}
+
+.paragraph.large {
+  font-size: 1.15rem;
+}
+
+@media (max-width: 768px) {
+  .paragraph {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+}

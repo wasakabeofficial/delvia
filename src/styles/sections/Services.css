@@ -1,0 +1,298 @@
+/* ============================
+   HERO / SERVICES MAIN SECTION
+   ============================ */
+.services-hero {
+  position: relative;
+  height: 120vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+  transition: background-image 0.8s cubic-bezier(0.67, 0.01, 0.33, 1.01);
+}
+
+/* Overlay */
+.services-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.82;
+  background: linear-gradient(
+    270deg,
+    rgba(0, 0, 0, 0.397),
+    rgba(255, 255, 255, 0.274)
+  );
+}
+
+/* ============================
+   CONTENT (Text + Button)
+   ============================ */
+.services-content {
+  position: relative;
+  z-index: 2;
+  max-width: 980px;
+  padding: 3.5rem 2.5rem 3.5rem 4.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-family: var(--font-body);
+  color: var(--color-white);
+}
+
+/* Title */
+.services-header {
+  margin-bottom: 2.5rem;
+}
+
+.services-header .section-title-heading {
+  font-size: 2.6rem;
+  font-family: var(--font-title);
+  color: var(--color-red);
+  font-weight: 800;
+  letter-spacing: 0.01em;
+  text-shadow:
+    0 2px 10px #fff5,
+    0 1px 4px #0003;
+}
+
+/* Soft top text */
+.services-header .section-title-kicker {
+  color: var(--color-yellow);
+  font-weight: 600;
+  font-size: 1.15rem;
+  text-shadow: 0 2px 6px #fff8;
+}
+
+/* Description paragraph */
+.services-desc {
+  color: #000000;
+  font-size: 1.18rem;
+  font-family: var(--font-body);
+  margin: 2rem 0.5rem 0;
+  max-width: 28rem;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1.2rem;
+  font-weight: 400;
+  background: rgba(255, 248, 236, 0.397);
+  box-shadow: var(--shadow-soft);
+  text-shadow: 0 2px 8px #fff5;
+}
+
+/* Read More button */
+.services-btn {
+  display: inline-block;
+  margin-bottom: 2.3rem;
+  margin-top: 0.7rem;
+  background: var(--color-yellow);
+  color: var(--color-red);
+  border-radius: 2em;
+  padding: 0.6rem 1.5rem;
+  font-size: 1.1rem;
+  font-family: var(--font-title);
+  font-weight: 800;
+  text-decoration: none;
+  letter-spacing: 0.08em;
+  box-shadow: var(--shadow-soft);
+  border: 2.5px solid var(--color-white);
+  transition:
+    background 0.25s,
+    color 0.25s,
+    border 0.25s;
+  width: 210px;
+  text-shadow:
+    0 1px 5px #fffbe8,
+    0 1px 2px #fff3;
+}
+
+.services-btn:hover {
+  background: var(--color-red);
+  color: var(--color-white);
+  border-color: var(--color-yellow);
+}
+
+/* ============================
+   COVERFLOW CAROUSEL
+   ============================ */
+.carousel-nav {
+  display: flex;
+  align-items: center;
+  gap: 1.15rem;
+  margin-top: 1.8rem;
+  perspective: 2600px;
+  justify-content: center;
+}
+
+/* Arrow Buttons */
+.carousel-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5rem;
+  height: 1rem;
+  background: var(--color-yellow);
+  color: var(--color-red);
+  border-radius: 10%;
+  border: none;
+  box-shadow: var(--shadow-soft);
+  cursor: pointer;
+  font-size: 1rem;
+  z-index: 3;
+  transition:
+    background 0.18s,
+    color 0.18s,
+    transform 0.18s;
+}
+
+.carousel-arrow:hover {
+  transform: scale(1.1);
+}
+
+/* Main carousel container */
+.services-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 440px;
+  max-width: 900px;
+  height: 340px;
+  gap: 0;
+  position: relative;
+  perspective: 1200px;
+  overflow: visible;
+}
+
+/* Card wrapper */
+.carousel-img-wrapper {
+  position: absolute;
+  left: 60%;
+  top: 0;
+  width: 210px;
+  min-width: 170px;
+  height: 315px;
+  margin-left: -105px;
+  background: var(--color-white);
+  border-radius: 1.3em;
+  box-shadow: var(--shadow-soft);
+  transition:
+    transform 0.68s cubic-bezier(0.41, 0, 0.3, 1.2),
+    z-index 0.32s,
+    opacity 0.29s;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  border: 3px solid transparent;
+  opacity: 0.86;
+  z-index: 1;
+}
+
+.carousel-img-wrapper.active,
+.carousel-img-wrapper:hover {
+  border-color: var(--color-yellow);
+  box-shadow: 0 8px 40px #f5cb8d99;
+  z-index: 2;
+  opacity: 1;
+}
+
+/* Image */
+.carousel-img-wrapper .carousel-img {
+  width: 100%;
+  height: 66%;
+  object-fit: cover;
+  display: block;
+  border-top-left-radius: 1.3em;
+  border-top-right-radius: 1.3em;
+  background: var(--color-bg-main);
+}
+
+/* Text content */
+.carousel-info {
+  color: var(--color-red);
+  font-family: var(--font-title);
+  padding: 0.8rem 1rem 1rem 1rem;
+  text-align: left;
+  font-size: 1rem;
+  line-height: 1.36;
+  border-bottom-left-radius: 1.3em;
+  border-bottom-right-radius: 1.3em;
+  background: #fff8ee;
+  box-shadow: 0 2px 10px #fff4;
+}
+
+.carousel-info h4 {
+  font-size: 1.19rem;
+  font-weight: 900;
+  letter-spacing: 0.01em;
+  margin: 0 0 0.22rem 0;
+  color: var(--color-red);
+  text-shadow:
+    0 1px 6px #fffbe8,
+    0 1px 2px #fff2;
+}
+
+/* ============================
+   RESPONSIVE
+   ============================ */
+@media (max-width: 1200px) {
+  .services-hero {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+    transition: background-image 0.8s cubic-bezier(0.67, 0.01, 0.33, 1.01);
+  }
+
+  .services-content {
+    max-width: 98vw;
+    padding-left: 2rem;
+    padding-right: 1rem;
+  }
+  .services-header .section-title-heading {
+    font-size: 2.1rem;
+  }
+  .carousel-img-wrapper {
+    width: 140px;
+    height: 240px;
+    margin-left: -55px;
+  }
+}
+
+@media (max-width: 800px) {
+  .services-content {
+    padding: 1.5rem 0.3rem 1rem 0.5rem;
+    max-width: 99vw;
+  }
+  .services-header .section-title-heading {
+    font-size: 1.5rem;
+  }
+  .carousel-info h4 {
+    font-size: 0.9rem;
+    line-height: 1.2;
+    text-align: center;
+  }
+}
+
+@media (max-width: 540px) {
+  .carousel-img-wrapper {
+    width: 80px;
+    height: 180px;
+    margin-left: -27px;
+  }
+  .carousel-info {
+    padding: 0.4rem;
+    font-size: 0.78rem;
+  }
+  .carousel-info h4 {
+    font-size: 0.75rem;
+  }
+}

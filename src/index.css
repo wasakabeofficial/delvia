@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Colores base */
+  --color-bg-main: #ffe8c3; /* Fondo crema */
+  --color-bg-secondary: #ffe5dc; /* Fondo rosado claro */
+  --color-bg-highlight: #f5cb8d; /* Amarillo pastel */
+
+  /* Gradientes principales */
+  --gradient-yellow: linear-gradient(120deg, #ffe8c3 0%, #f5cb8d 100%);
+  --gradient-red: linear-gradient(120deg, #b3031b 0%, #f22234 100%);
+
+  /* Colores principales de la marca */
+  --color-yellow: #f5cb24; /* Amarillo principal (splash) */
+  --color-red: #b3031b; /* Rojo principal */
+  --color-dark-red: #690815; /* Rojo vino/frambuesa */
+  --color-orange: #ff8a1d; /* Naranja (cítrico) */
+  --color-green: #93ba3e; /* Verde manzana */
+  --color-brown: #a26a2b; /* Marrón claro (coco) */
+  --color-white: #fff; /* Blanco puro */
+  --color-black: #212121; /* Negro neutro para textos */
+
+  /* Tipografías */
+  --font-title: "Montserrat", Arial, sans-serif;
+  --font-body: "Open Sans", Arial, sans-serif;
+
+  /* Sombra sutil para tarjetas/componentes */
+  --shadow-soft: 0 4px 24px 0 rgba(180, 3, 27, 0.1);
+}

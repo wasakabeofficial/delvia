@@ -1,0 +1,41 @@
+.subtitle {
+  font-family: var(--font-title);
+  color: var(--color-dark-red);
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.2px;
+}
+
+.subtitle.h2,
+.subtitle h2,
+h2.subtitle {
+  font-size: 1.8rem;
+}
+
+.subtitle.h3,
+.subtitle h3,
+h3.subtitle {
+  font-size: 1.5rem;
+}
+
+.subtitle.h4,
+.subtitle h4,
+h4.subtitle {
+  font-size: 1.25rem;
+}
+
+@media (max-width: 768px) {
+  .subtitle.h2,
+  h2.subtitle {
+    font-size: 1.45rem;
+  }
+  .subtitle.h3,
+  h3.subtitle {
+    font-size: 1.18rem;
+  }
+  .subtitle.h4,
+  h4.subtitle {
+    font-size: 1rem;
+  }
+}

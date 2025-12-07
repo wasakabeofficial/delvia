@@ -1,0 +1,359 @@
+.buy-main {
+  min-height: 100vh;
+  background: var(--gradient-yellow);
+  font-family: var(--font-body);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 0;
+}
+
+.buy-section {
+  background: var(--color-white);
+  border-radius: 2.5rem;
+  box-shadow: 0 6px 36px 0 rgba(180, 3, 27, 0.12);
+  padding: 2.7rem 2.1rem;
+  min-width: 350px;
+  max-width: 420px;
+  width: 100%;
+}
+
+.buy-title {
+  font-family: var(--font-title);
+  color: var(--color-red);
+  margin-bottom: 2rem;
+  font-size: 2.3rem;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 1.2px;
+  text-shadow: 0 2px 8px rgba(243, 197, 97, 0.07);
+}
+
+.buy-subtitle {
+  font-family: var(--font-title);
+  color: var(--color-dark-red);
+  margin-bottom: 1.1rem;
+  margin-top: 0.8rem;
+  font-size: 1.28rem;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  text-align: left;
+}
+
+.buy-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: var(--color-black);
+  font-size: 1.03rem;
+}
+
+.buy-select,
+.buy-input,
+.buy-input-full,
+.buy-input-small {
+  border: 1.7px solid var(--color-bg-highlight);
+  background: var(--color-bg-secondary);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  border-radius: 0.6rem;
+  box-shadow: 0 2px 6px 0 rgba(180, 3, 27, 0.04);
+  outline: none;
+  transition:
+    border 0.2s,
+    box-shadow 0.2s;
+}
+
+.buy-select {
+  margin-top: 0.5rem;
+  width: 100%;
+  padding: 0.7rem;
+  margin-bottom: 1.1rem;
+}
+
+.buy-select:focus,
+.buy-input:focus,
+.buy-input-full:focus,
+.buy-input-small:focus {
+  border: 1.7px solid var(--color-red);
+  box-shadow: 0 2px 8px 0 rgba(180, 3, 27, 0.11);
+}
+
+.buy-product-info {
+  margin-bottom: 1.3rem;
+  color: #fff;
+  border-radius: 0.9rem;
+  padding: 1.15rem;
+  box-shadow: 0 4px 18px 0 rgba(180, 3, 27, 0.1);
+  font-size: 1.05rem;
+  background:
+    linear-gradient(95deg, rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.04)),
+    var(--color-red);
+  position: relative;
+}
+
+.buy-product-info strong {
+  font-size: 1.08rem;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 0.18rem;
+  letter-spacing: 0.2px;
+}
+
+.buy-product-desc {
+  font-size: 0.98rem;
+  opacity: 0.93;
+  margin-top: 3px;
+}
+
+.buy-input {
+  margin-left: 8px;
+  width: 68px;
+  padding: 0.4rem;
+  margin-top: 0.3rem;
+}
+
+.buy-input-full {
+  width: 100%;
+  padding: 0.55rem;
+  margin-top: 0.3rem;
+  margin-bottom: 0.7rem;
+}
+
+.buy-input-small {
+  width: 58px;
+  padding: 0.34rem;
+  margin-left: 5px;
+  margin-top: 0.3rem;
+}
+
+.card-row {
+  display: flex;
+  gap: 14px;
+  margin-top: 0.7rem;
+  margin-bottom: 1.05rem;
+}
+
+/* Paso */
+.step-container {
+  margin-top: 0.6rem;
+}
+
+/* Pago */
+.pay-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-bottom: 1.1rem;
+}
+
+.radio-box {
+  font-weight: 600;
+  color: var(--color-black);
+  background: var(--color-bg-secondary);
+  padding: 0.6rem 0.7rem;
+  border-radius: 0.6rem;
+  border: 1px solid var(--color-bg-highlight);
+  transition:
+    border 0.2s,
+    background 0.2s;
+  cursor: pointer;
+  user-select: none;
+}
+
+.radio-box input[type="radio"] {
+  margin-right: 9px;
+  accent-color: var(--color-red);
+}
+
+/* Total */
+.buy-total {
+  margin-bottom: 1.7rem;
+  font-size: 1.15rem;
+  text-align: right;
+  color: var(--color-dark-red);
+  font-weight: 800;
+  letter-spacing: 0.1px;
+}
+
+/* Botones */
+.buy-btn,
+.back-btn {
+  width: 100%;
+  padding: 0.97rem 0;
+  border: none;
+  border-radius: 1rem;
+  font-family: var(--font-title);
+  font-size: 1.12rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-bottom: 0.4rem;
+  box-shadow: 0 2px 14px 0 rgba(243, 65, 54, 0.08);
+  transition:
+    background 0.2s,
+    opacity 0.18s,
+    box-shadow 0.2s;
+}
+
+.buy-btn {
+  background: var(--gradient-red);
+  color: #fff;
+  margin-top: 0.6rem;
+}
+
+.buy-btn:hover,
+.back-btn:hover {
+  opacity: 0.97;
+  box-shadow: 0 4px 20px 0 rgba(180, 3, 27, 0.16);
+}
+
+.back-btn {
+  background: linear-gradient(90deg, #f8f8f8 70%, #ffe8c3 100%);
+  color: var(--color-black);
+  border: 1.5px solid #e2c6c2;
+  font-weight: 600;
+  margin-top: 0.2rem;
+}
+
+/* Ticket OXXO */
+.oxxo-ticket {
+  background: var(--color-bg-secondary);
+  padding: 1.25rem 1rem 1.5rem 1rem;
+  border-radius: 1.1rem;
+  box-shadow: 0 2px 18px 0 rgba(70, 70, 70, 0.08);
+  text-align: center;
+  border: 2px dashed var(--color-orange);
+  position: relative;
+  margin-bottom: 1.3rem;
+}
+
+.oxxo-ticket h3 {
+  color: var(--color-brown);
+  margin-bottom: 0.3rem;
+}
+
+.barcode {
+  font-family: "Libre Barcode 128", "Courier New", monospace;
+  font-size: 1.2rem;
+  letter-spacing: 8px;
+  background: var(--color-white);
+  color: var(--color-black);
+  padding: 1rem;
+  border-radius: 0.6rem;
+  margin: 1.1rem 0 0.9rem 0;
+  border: 2px solid var(--color-bg-highlight);
+  box-shadow: 0 1px 7px 0 rgba(180, 3, 27, 0.09);
+}
+
+.oxxo-amount {
+  font-size: 1.22rem;
+  color: var(--color-red);
+  font-weight: bold;
+}
+
+.oxxo-ticket::before,
+.oxxo-ticket::after {
+  content: "";
+  display: block;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: var(--color-white);
+  position: absolute;
+  left: -22px;
+}
+.oxxo-ticket::before {
+  top: -22px;
+}
+.oxxo-ticket::after {
+  bottom: -22px;
+}
+
+/* Modal */
+.modal-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(33, 20, 2, 0.32);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5000;
+  animation: fadeInBg 0.22s;
+}
+
+@keyframes fadeInBg {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.modal-box {
+  background: white;
+  padding: 2.2rem 1.2rem 1.7rem 1.2rem;
+  border-radius: 1.4rem;
+  box-shadow: 0 6px 40px 0 rgba(180, 3, 27, 0.17);
+  text-align: center;
+  width: 310px;
+  animation: popInModal 0.23s cubic-bezier(0.33, 1.02, 0.68, 0.99);
+}
+.input-error {
+  color: #c62828;
+  font-size: 0.85rem;
+  margin-top: 0.25rem;
+  font-weight: 600;
+}
+
+.input-error.small {
+  font-size: 0.75rem;
+  margin-top: 0.18rem;
+}
+
+@keyframes popInModal {
+  0% {
+    transform: scale(0.7);
+  }
+  80% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.modal-box h2 {
+  color: var(--color-green);
+  font-family: var(--font-title);
+  margin-bottom: 1.4rem;
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+@media (max-width: 550px) {
+  .buy-section {
+    min-width: unset;
+    padding: 1.3rem 0.7rem;
+    border-radius: 1.3rem;
+  }
+  .modal-box {
+    width: 97vw;
+  }
+}
+
+::-webkit-input-placeholder {
+  color: #aaa;
+}
+::-moz-placeholder {
+  color: #aaa;
+}
+:-ms-input-placeholder {
+  color: #aaa;
+}
+::placeholder {
+  color: #aaa;
+}
