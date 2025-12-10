@@ -10,7 +10,7 @@ import proceso_artesanal from "./proceso_artesanal.png";
 import saludable from "./saludable.png";
 import sabores_unicos from "./sabores_unicos.png";
 import premium from "./premium.png";
-
+import img_uno from "./Imagen1.png";
 import cara_uno from "./cara_uno.jpg";
 import cara_dos from "./cara_dos.jpg";
 
@@ -31,4 +31,5 @@ export {
   cara_uno,
   cara_dos,
   foto_producto_pasto,
+  img_uno,
 };

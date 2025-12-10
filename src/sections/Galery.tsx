@@ -1,5 +1,13 @@
 import "../styles/sections/Gallery.css";
-import { dahyun, jyhoyo, mermelada, mina, nayeon, tzuyu } from "../assets";
+import {
+  dahyun,
+  img_uno,
+  jyhoyo,
+  mermelada,
+  mina,
+  nayeon,
+  tzuyu,
+} from "../assets";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
@@ -7,33 +15,38 @@ import { useEffect, useState } from "react";
 const videos = [
   {
     img: nayeon,
-    title: "Mermelada de Coco con Maracuyá",
-    subtitle: "Sabor tropical, 100% natural",
+    title: "Mermelada de Betabel-Manzana y Coco-Maracuyá",
+    subtitle: "Dos sabores artesanales, disfruta lo mejor de Delvia",
   },
   {
     img: tzuyu,
-    title: "Comparte Momentos Saludables",
-    subtitle: "Desayuno artesanal con amigos",
+    title: "Variedad Artesanal Delvia",
+    subtitle: "Sabor natural: Coco-Maracuyá y Betabel-Manzana",
   },
   {
     img: dahyun,
-    title: "Delvia: Variedad Artesanal",
-    subtitle: "Coco-Maracuyá y Betabel-Manzana",
+    title: "Sano y Artesanal al Aire Libre",
+    subtitle: "Ingredientes frescos, ideales para tu picnic",
   },
   {
     img: jyhoyo,
-    title: "Mermelada de Betabel con Manzana",
-    subtitle: "Hecha con jugo natural de naranja",
+    title: "Betabel-Manzana en tu Día de Campo",
+    subtitle: "Lleva el sabor natural a cualquier lugar",
   },
   {
     img: mina,
-    title: "Elige Artesanal, Elige Salud",
-    subtitle: "Sin conservadores ni colorantes",
+    title: "Sabor Casero Todo el Año",
+    subtitle: "Disfruta Delvia en tus desayunos",
   },
   {
     img: mermelada,
-    title: "Ingredientes Frescos y Naturales",
-    subtitle: "Sano, artesanal y sin aditivos",
+    title: "Frescura Artesanal en Cada Frasco",
+    subtitle: "Coco-Maracuyá y Betabel-Manzana, perfectos para compartir",
+  },
+  {
+    img: img_uno,
+    title: "Mermelada de Coco con Maracuyá",
+    subtitle: "Dulzura tropical, 100% natural",
   },
 ];
 
